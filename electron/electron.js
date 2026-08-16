@@ -6,18 +6,20 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 function createWindow () {
-  const win = new BrowserWindow({ 
-    width: 800, 
-    height: 600,
+  const win = new BrowserWindow({
+    show: false,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true
     }
   });
-  
+  win.maximize();
   win.setMenu(null);
-  
   win.loadFile(path.join(__dirname, '..', 'dist', 'index.html'));
+  
+  win.once('ready-to-show', () => {
+    win.show();
+  });
 }
 
 app.whenReady().then(createWindow);
