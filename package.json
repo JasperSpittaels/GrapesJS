@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
-    "fabric": "^7.4.0",
     "grapesjs": "^0.23.5",
     "grapesjs-blocks-basic": "^1.0.2",
     "grapesjs-component-countdown": "^1.0.2",
