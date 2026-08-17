@@ -1,0 +1,32 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* LOGO VERSION */
+
+.gjs-pn-commands .gjs-pn-buttons,
+#gjs-pn-commands .gjs-pn-buttons {
+  display: none;
+}
+
+.gjs-logo {
+  height: 25px;
+}
+
+.gjs-logo-cont {
+  position: relative;
+  display: inline-block;
+  top: 3px;
+}
+
+.gjs-logo-version {
+  position: absolute;
+  font-size: 10px;
+  padding: 1px 7px;
+  border-radius: 15px;
+  bottom: 2px;
+  right: -43px;
+}
